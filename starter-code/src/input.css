@@ -1,1 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    /* Colors */
+
+    /* Primary */
+    --color-cyan-600: #4D96A9;
+    --color-cyan-300: #8FE3F9;
+    --color-purple-600: #855FB1;
+    --color-purple-300: #D9B8FF;
+
+    /* Neutral */
+    --color-slate-900: #28283D;
+    --color-slate-600: #87879D;
+    --color-slate-300: #D1D1DF;
+    --color-footer-overlay: #5392A1;
+    --color-white: #FAFAFA;
+
+    /* Typography */
+    --font-red-hat-display: "Red Hat Display", 'sans-serif';
+
+    /* Font Sizes */
+    --text-2xl: 40px;
+    --text-2xl--line-height: 110%;
+    --text-xl: 32px;
+    --text-xl--line-height: 110%;
+    --text-lg: 16px;
+    --text-lg--line-height: 110%;
+    --text-base: 12px;
+    --text-base--line-height: 110%;
+
+    /* Spacing */
+    --spacing: 4px;
+
+    /* Breakpoints */
+    --breakpoint-lg: 1440px;
+    --breakpoint-md: 768px;
+    --breakpoint-sm: 375px;
+}
+
+@layer base {
+    html {
+        @apply font-red-hat-display;
+    }
+
+    body {
+        @apply  bg-white overflow-x-hidden
+    }
+
+    section {
+        @apply flex flex-col items-center justify-center gap-16 py-8 w-full lg:max-w-[1120px] lg:pt-14
+    }
+
+    button {
+        @apply flex gap-2 rounded-[29px] text-left items-center justify-center px-10 py-4 w-fit
+    }
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply text-2xl md:text-[48px] lg:text-[64px] font-black
+    }
+
+    .text-preset-2 {
+        @apply text-xl md:text-[36px] lg:text-[40px] font-black
+    }
+
+    .text-preset-3 {
+        @apply text-base md:text-[14px] lg:text-[16px] font-black tracking-[4px]
+    }
+
+    .text-preset-4 {
+        @apply text-lg md:text-[16px] lg:text-[18px] font-medium leading-[150%]
+    }
+
+    .text-preset-5 {
+        @apply text-[18px] leading-[150%] font-black
+    }
+}
+
+@layer components {
+    .content-container {
+        @apply flex flex-col items-center justify-center pt-12 px-8 pb-0
+    }
+
+    .text-container {
+        @apply flex flex-col items-center justify-center gap-6 text-center 
+    }
+
+    .text-header-container {
+        @apply flex flex-col items-center justify-center gap-4 text-center
+    }
+
+    .hero-image {
+        @apply scale-137 sm:scale-125 sm:max-h-[303px] pt-16
+    }
+
+    .hero-container {
+        @apply max-lg:flex max-lg:flex-col max-lg:items-center max-lg:gap-12 lg:flex lg:items-center lg:justify-center lg:gap-8
+    }
+
+
+    .section-number {
+        @apply flex w-[56px] h-[56px] rounded-full border border-slate-300 items-center justify-center text-slate-600 bg-white
+    }
+
+    .section-heading {
+        @apply flex flex-col items-center justify-center
+    }
+
+    .section-footer {
+        @apply w-[100vw] p-0 bg-footer-overlay bg-cover text-white flex justify-center items-center
+    }
+
+    .section-footer-image {
+        @apply bg-cyan-600
+    }
+
+    .grid-photo-container {
+        @apply grid grid-cols-2 gap-4 md:grid-cols-4
+    }
+
+    .grid-photo-item {
+        @apply rounded-md
+    }
+
+    .button-container {
+        @apply flex flex-col gap-4 items-center md:flex-row
+    }
+}

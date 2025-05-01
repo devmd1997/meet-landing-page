@@ -9,23 +9,70 @@
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+  <div class="content-container">
+    <img src="../assets/logo.svg" alt="logo"/>
+    <div class="hero-container">
+      <img class="hero-image lg:hidden" src="../assets/tablet/image-hero.png" alt="hero" />
+      <img class="relative right-25 max-lg:hidden" src="../assets/desktop/image-hero-left.png" alt="hero-left" />
+      <div class="text-container pt-12 max-w-[448px]">
+        <div class="text-preset-1 text-slate-900">
+          Group Chat for Everyone
+        </div>
+        <div class="text-preset-4 text-slate-600">
+          Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+        </div>
+        <div class="button-container">
+          <button class="text-preset-5 bg-cyan-600">
+            <div class="text-white">Download</div>
+            <div class="text-cyan-300">v1.3</div>
+          </button>
+          <button class="text-preset-5 bg-purple-600">
+            <div class="text-white">What is it?</div>
+          </button>
+        </div>
+      </div>
+      <img class="relative left-25 top-20 max-lg:hidden" src="../assets/desktop/image-hero-right.png" alt="hero-right" />
+    </div>
 
-  Download v1.3
-  What is it?
+    <section>
+      <div class="section-heading">
+        <div class="div border border-slate-300 h-[80px]"></div>
+        <div class="section-number text-preset-5">01</div>
+      </div>
+      <div class="grid-photo-container">
+        <img class="grid-photo-item" src="../assets/desktop/image-woman-in-videocall.jpg" alt="woman in videocall" />
+        <img class="grid-photo-item" src="../assets/desktop/image-women-videochatting.jpg" alt="woman in videocall" />
+        <img class="grid-photo-item" src="../assets/desktop/image-men-in-meeting.jpg" alt="woman in videocall" />
+        <img class="grid-photo-item" src="../assets/desktop/image-man-texting.jpg" alt="woman in videocall" />
+      </div>
+      <div class="text-container">
+        <div class="text-header-container">
+          <div class="text-preset-3 text-cyan-600 uppercase">Build for Modern use</div>
+          <div class="text-preset-2 text-slate-900 max-w-[400px]">Smarter meetings, all in one place</div>
+        </div>
+        <div class="text-preset-4 text-slate-600 max-w-[550px]">
+          Send messages, share files, show your screen, and record your meetings — all in one 
+          workspace. Control who can join with invite-only team access, data encryption, and data export.
+        </div>
+      </div>
+    </section>
 
-  01
-  Built for modern use
-
-  Smarter meetings, all in one place
-
-  Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-  Download v1.3
+    <section class="pb-0 gap-0">
+      <div class="section-heading -mb-8 z-10">
+        <div class="div border border-slate-300 h-[80px]"></div>
+        <div class="section-number text-preset-5">02</div>
+      </div>
+      <div class="section-footer bg-[url('../assets/mobile/image-footer.jpg')] md:bg-[url('../assets/tablet/image-footer.jpg')] lg:bg-[url('../assets/desktop/image-footer.jpg')] bg-blend-soft-light">
+        <div class="text-container p-8 pt-16 md:px-32s lg:flex-row lg:gap-16 lg:text-left lg:px-40 lg:py-28">
+          <div class="text-preset-2">Experience more together</div>
+          <div class="text-preset-4">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</div>
+          <button class="text-preset-5 bg-purple-600">
+            <div class="text-white">Download</div>
+            <div class="text-purple-300">v1.3</div>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
